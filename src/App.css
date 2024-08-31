@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b1b; /* Dark background color */
+  color: #e5e5e5; /* Light text color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header styling */
+header {
+  background-color: #333;
+  padding: 1rem 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  font-size: 18px;
+  color: #FAE7F3;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0 1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e63b3b; /* Red hover color */
+}
+
+/* Main section styling */
+.home-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  color: #e5e5e5; /* Light text color */
 }
 
-.App-link {
-  color: #61dafb;
+.intro-section {
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-heading {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.name-highlight {
+  color: #e63b3b; /* Red color for highlighting the name */
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #e63b3b;
+  margin-top: 0.5rem;
+}
+
+.intro-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ccc; /* Slightly lighter gray for description */
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.about-button {
+  background-color: transparent;
+  color: #e63b3b;
+  padding: 10px 20px;
+  border: 2px solid #e63b3b;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-button:hover {
+  background-color: #e63b3b;
+  color: #1b1b1b;
+}
+
+/* Stats section styling */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 2rem;
+  color: #e63b3b;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.about-main {
+  padding: 2rem;
+  background-color: #1b1b1b; /* Ensure consistent background */
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #555;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  color:#1b1b1b;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.contacts{
+  color:#1b1b1b;
+}
+.projects-title {
+  color: #555;
+  font-size: 2rem;
+}
+
+.projects-divider {
+  margin: 1rem 0 2rem 0;
+  border: 0;
+  border-top: 3px solid #e63b3b; /* Thick red line after the heading */
+}
+
+.projects-heading {
+  color: #1b1b1b;
+  font-size: large;
+  margin-top: 1.5rem; /* Space above each project heading */
+}
+
+.projects {
+  color: #1b1b1b;
+  margin-top: 0.5rem; /* Small gap between heading and description */
 }
