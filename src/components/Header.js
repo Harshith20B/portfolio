@@ -5,7 +5,7 @@ import '../App.css'; // Assuming separate CSS for the header
 const Header = () => (
   <header>
     <nav>
-      <Link to="/">Home</Link>
+      <Link to="/portfolio">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/projects">Projects</Link>
       <Link to="/contact">Contact</Link>
